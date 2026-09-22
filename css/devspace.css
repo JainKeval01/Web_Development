@@ -1,0 +1,338 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    min-height: 100vh;
+}
+
+aside {
+    background-color: rgb(233, 238, 238);
+    padding: 25px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.heading {
+    margin-bottom: 30px;
+}
+
+.navigation {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    width: 200px;
+    height: 50px;
+    padding: 2px;
+    border-radius: 10px;
+}
+
+.navigation:hover {
+    background-color: rgb(184, 239, 239);
+}
+
+main {
+    background-color: rgb(254, 254, 253);
+    padding: 20px;
+    font-family:Georgia, 'Times New Roman', Times, serif
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.search-box {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 20px;
+    background-color: #e1e0e0;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    width: 600px;
+}
+
+.search-box input {
+    border: none;
+    outline: none;
+    background-color: #e1e0e0;
+    width: 100%;
+    font-size: 14px;
+}
+
+.sideHeader {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.user {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.userInfo {
+    display: flex;
+    flex-direction: column;
+}
+
+.userInfo label:nth-child(1) {
+    font-weight: bold;
+}
+
+.userInfo label:nth-child(2) {
+    color: gray;
+}
+
+.userImage {
+    display: flex;
+    font-size: large;
+    align-items: end;
+    justify-content: center;
+    width: 30px;
+    background-color: rgb(200, 199, 199);
+    height: 30px;
+    border-radius: 30px;
+}
+.cards{
+    margin-top:30px ;
+    display: flex;
+    gap: 10px;
+}
+.card1{
+    flex: 3;
+    padding: 20px;
+    height: 250px;
+    border-radius: 20px;
+    background-image: url("../images/guyStudy.png");
+    background-size: cover;
+    background-position: center;
+}
+.card1 p{
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.card1 h1:nth-child(3){
+    color: blue;
+    margin-bottom: 10px;
+}
+.card1 p:nth-child(4){
+    color: rgb(121, 118, 118);
+    font-weight: 200;
+    margin-bottom:30px ;
+}
+.card1 button:nth-child(5){
+    background-color: rgb(4, 52, 244);
+    border: none;
+    outline: none;
+    width: 190px;
+    height: 40px;
+    border-radius: 10px;
+    color: white;
+}
+.card1 button:nth-child(6){
+    background-color: rgb(243, 243, 245);
+    border: none;
+    outline: none;
+    width: 190px;
+    height: 40px;
+    border-radius: 10px;
+    margin-left: 10px;
+    color: rgb(4, 52, 244);
+    font-weight: 700;
+}
+
+.card2{
+    flex: 1;
+    height: 250px;
+    padding: 25px;
+    border-radius: 20px;
+    background-color: #f0f5ff;
+}
+
+.card2 i{
+    font-size: 30px;
+    color: blue;
+    margin-bottom: 20px;
+}
+
+.card2 h2{
+    font-size: 20px;
+    line-height: 1.5;
+    margin-bottom: 25px;
+}
+
+.card2 p{
+    color: gray;
+    font-weight: bold;
+}
+.stats{
+    margin-top: 18px;
+    display: flex;
+    gap: 15px;
+}
+
+.stat-card{
+    flex: 1;
+    height: 80px;
+    padding: 12px;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.stat-icon{
+    width: 45px;
+    height: 45px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #eaf1ff;
+    color: blue;
+    font-size: 22px;
+}
+
+.stat-info h2{
+    font-size: 20px;
+}
+
+.stat-info p{
+    color: gray;
+    font-size: 13px;
+}
+
+.growth{
+    margin-left: auto;
+    padding: 6px 8px;
+    border-radius: 8px;
+    background-color: #e8fff3;
+    color: #12a862;
+    font-size: 12px;
+    font-weight: bold;
+}
+.project-section{
+    margin-top: 18px;
+    display: flex;
+    gap: 15px;
+}
+
+.recent-projects{
+    flex: 3;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    padding: 15px;
+}
+
+.upcoming-tasks{
+    flex: 1.4;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    padding: 15px;
+}
+.section-heading{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.section-heading span{
+    color: blue;
+    font-size: 13px;
+    font-weight: bold;
+}
+.project-row{
+    height: 55px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    border-bottom: 1px solid #eeeeee;
+}
+
+.project-icon{
+    width: 45px;
+    height: 40px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #eef3ff;
+    color: #2870ff;
+    font-size: 18px;
+}
+
+.project-name{
+    width: 250px;
+}
+
+.project-name h4{
+    font-size: 14px;
+}
+
+.project-name p{
+    color: gray;
+    font-size: 12px;
+    margin-top: 4px;
+}
+
+.project-date{
+    color: gray;
+    font-size: 12px;
+    margin-left: auto;
+}
+
+.status{
+    padding: 6px 10px;
+    border-radius: 8px;
+    font-size: 11px;
+}
+
+.completed{
+    color: #0ca65b;
+    background-color: #e8fff3;
+}
+
+.progress{
+    color: #2870ff;
+    background-color: #eaf1ff;
+}
+.task{
+    height: 55px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    border-bottom: 1px solid #eeeeee;
+}
+
+.task > i:first-child{
+    font-size: 20px;
+    color: #2870ff;
+}
+
+.task div{
+    flex: 1;
+}
+
+.task h4{
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.task p{
+    color: gray;
+    font-size: 11px;
+    margin-top: 4px;
+}
+
+.task > i:last-child{
+    color: gray;
+    font-size: 13px;
+}
